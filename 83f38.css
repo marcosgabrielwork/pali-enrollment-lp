@@ -1,0 +1,60 @@
+/*
+ * Self-hosted fonts for Pali Adventures
+ * Replaces external Typekit fonts for better performance
+ */
+
+/* Hero New Font Family */
+@font-face {
+    font-family: 'hero-new';
+    src: url('/wp-content/themes/pali/fonts/hero-new/hero-new-400.woff2') format('woff2'),
+         url('/wp-content/themes/pali/fonts/hero-new/hero-new-400.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'hero-new';
+    src: url('/wp-content/themes/pali/fonts/hero-new/hero-new-700.woff2') format('woff2'),
+         url('/wp-content/themes/pali/fonts/hero-new/hero-new-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'hero-new';
+    src: url('/wp-content/themes/pali/fonts/hero-new/hero-new-900.woff2') format('woff2'),
+         url('/wp-content/themes/pali/fonts/hero-new/hero-new-900.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Canada Type Gibson Font Family */
+@font-face {
+    font-family: 'canada-type-gibson';
+    src: url('/wp-content/themes/pali/fonts/canada-type-gibson/canada-type-gibson-400.woff2') format('woff2'),
+         url('/wp-content/themes/pali/fonts/canada-type-gibson/canada-type-gibson-400.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'canada-type-gibson';
+    src: url('/wp-content/themes/pali/fonts/canada-type-gibson/canada-type-gibson-600.woff2') format('woff2'),
+         url('/wp-content/themes/pali/fonts/canada-type-gibson/canada-type-gibson-600.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'canada-type-gibson';
+    src: url('/wp-content/themes/pali/fonts/canada-type-gibson/canada-type-gibson-700.woff2') format('woff2'),
+         url('/wp-content/themes/pali/fonts/canada-type-gibson/canada-type-gibson-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
