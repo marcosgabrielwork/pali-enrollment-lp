@@ -179,26 +179,31 @@
   /* ── PALI BUTTON ── */
   .pali-btn-wrapper { display: flex; justify-content: center; width: 100%; }
   .pali-btn-shadow-wrap { position: relative; display: inline-block; width: 100%; }
-  .pali-cta-btn {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 13px 28px;
-    font-family: 'canada-type-gibson', 'Gill Sans', sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-decoration: none;
-    border-radius: 50px;
-    border: 2px solid #000;
-    -webkit-text-stroke: 1px #000;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-    transition: transform 0.12s ease;
-    box-sizing: border-box;
-    text-transform: uppercase;
-  }
+.pali-cta-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 13px 28px;
+  font-family: 'hero-new', 'canada-type-gibson', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 2px solid #000;
+  -webkit-text-stroke: 1px #000;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.12s ease;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.pali-cta-btn strong {
+  font-weight: 900;
+}
   .pali-cta-btn:hover  { transform: translate(-2px, -2px); text-decoration: none; }
   .pali-cta-btn:active { transform: translate(5px, 5px); }
   .pali-btn-shadow {
