@@ -163,17 +163,45 @@
   }
   .lp-modal-overlay.active { opacity: 1; pointer-events: all; }
   .lp-modal {
-  background: #fff; border-radius: 20px; padding: 48px 40px;
-  max-width: 680px; width: 100%; position: relative;
-  transform: translateY(24px); transition: transform 0.3s ease;
-  box-shadow: 0 24px 80px rgba(0,0,0,0.28);
-  height: 80vh; overflow-y: auto;
+    background: #fff; border-radius: 20px; padding: 48px 40px;
+    max-width: 680px; width: 100%; position: relative;
+    transform: translateY(24px); transition: transform 0.3s ease;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.28);
+    height: 80vh; overflow-y: auto;
   }
   .lp-modal-overlay.active .lp-modal { transform: translateY(0); }
-  .lp-modal__close { position: absolute; top: 16px; right: 20px; background: none; border: none; font-size: 22px; cursor: pointer; color: #aaa; }
+  .lp-modal__close {
+    position: sticky; top: 0; float: right;
+    background: #fff; border: none; font-size: 22px;
+    cursor: pointer; color: #aaa; z-index: 10;
+    margin-bottom: 8px;
+  }
   .lp-modal__close:hover { color: #333; }
   .lp-modal__title { font-family: 'hero-new', 'canada-type-gibson', sans-serif; font-size: 24px; font-weight: 900; color: var(--navy); margin-bottom: 8px; line-height: 1.2; text-transform: uppercase; }
   .lp-modal__sub { font-size: 14px; color: #666; margin-bottom: 10px; line-height: 1.6; }
+
+  /* ── HUBSPOT FORM OVERRIDES ── */
+  #hubspot-form-container .hs-button {
+    font-family: 'hero-new', 'canada-type-gibson', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    background: var(--coral) !important;
+    color: #fff !important;
+    border: 2px solid #000 !important;
+    -webkit-text-stroke: 1px #000 !important;
+    border-radius: 50px !important;
+    padding: 13px 28px !important;
+    cursor: pointer !important;
+    white-space: nowrap !important;
+    transition: transform 0.12s ease !important;
+    width: auto !important;
+    display: inline-block !important;
+  }
+  #hubspot-form-container .hs-button:hover {
+    transform: translate(-2px, -2px) !important;
+  }
 
   /* ── ANIMATIONS ── */
   @keyframes fadeUp {
@@ -188,7 +216,7 @@
   @media (max-width: 640px) {
     .lp-hero__title { padding: 0 20px; }
     .lp-hero__content { padding: 0 20px 48px; }
-    .lp-modal { padding: 36px 24px; }
+    .lp-modal { padding: 36px 24px; height: 90vh; }
     .lp-sessions { padding: 40px 20px 60px; }
     .footer-second-inner { flex-direction: column; gap: 24px; }
     .pali-cta-btn { font-size: 16px; }
@@ -354,7 +382,6 @@
     formId: "dd6af80f-801d-4fe2-a451-b2494e1a8e3f",
     region: "na1",
     target: "#hubspot-form-container",
-    submitButtonClass: "pali-cta-btn pali-cta-btn--coral",
     translations: {
       en: { submitText: "Help me to enroll" }
     }
