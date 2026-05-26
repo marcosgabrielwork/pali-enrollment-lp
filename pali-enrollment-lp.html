@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 Summer Camp Enrollment | Pali Adventures</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="preload" href="https://paliadventures.com/wp-content/themes/pali/fonts/hero-new/hero-new-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://paliadventures.com/wp-content/themes/pali/fonts/canada-type-gibson/canada-type-gibson-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://paliadventures.com/wp-content/themes/pali/fonts/canada-type-gibson/canada-type-gibson-600.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  @font-face {
+    font-family: 'hero-new';
+    src: url('https://paliadventures.com/wp-content/themes/pali/fonts/hero-new/hero-new-900.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'canada-type-gibson';
+    src: url('https://paliadventures.com/wp-content/themes/pali/fonts/canada-type-gibson/canada-type-gibson-400.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'canada-type-gibson';
+    src: url('https://paliadventures.com/wp-content/themes/pali/fonts/canada-type-gibson/canada-type-gibson-600.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+</style>
+<link rel="preload" as="image" href="https://paliadventures.com/wp-content/uploads/2019/04/girls-group-optimized.jpg" fetchpriority="high">
+<link rel="stylesheet" href="https://paliadventures.com/wp-content/themes/pali/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://paliadventures.com/wp-content/themes/pali/css/menu.css">
+<link rel="icon" href="https://paliadventures.com/wp-content/uploads/2018/12/favicon3-16x16-1.png" sizes="32x32">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy:  #003f78;
+    --coral: #cf4a2e;
+    --amber: #f2921e;
+    --sky:   #89b9ff;
+    --sand:  #cdbba1;
+  }
+  body {
+    font-family: 'canada-type-gibson', 'Gill Sans', Calibri, sans-serif;
+    background: #fff;
+    color: #1a1a1a;
+    overflow-x: hidden;
+  }
+
+  /* HEADER */
+  .main-header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .main-header__bottom { padding: 0 24px; }
+  .main-header .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+  }
+  .main-header__logo img { height: 44px; width: auto; }
+  .main-header__nav ul { display: flex; gap: 28px; list-style: none; }
+  .main-header__nav a { font-size: 14px; font-weight: 600; color: #333; text-decoration: none; }
+  .main-header__nav a:hover { color: var(--coral); }
+  .main-header__right { display: flex; align-items: center; gap: 16px; }
+  .phone-head { font-size: 14px; font-weight: 700; color: var(--navy); text-decoration: none; }
+  .c-btn { display: inline-block; padding: 10px 22px; border-radius: 50px; font-size: 13px; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; }
+  .c-btn-secondary { background: var(--coral); color: #fff; border: 2px solid var(--coral); }
+  .c-btn-secondary:hover { background: #b83d24; }
+  .c-btn-primary { background: var(--navy); color: #fff; border: 2px solid var(--navy); font-size: 13px; padding: 10px 18px; border-radius: 50px; font-weight: 700; text-decoration: none; text-transform: uppercase; }
+  @media (max-width: 900px) {
+    .main-header__nav { display: none; }
+    .phone-head { display: none; }
+  }
+
+  /* HERO */
+  .lp-hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 80px;
+  }
+  .lp-hero__bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('https://paliadventures.com/wp-content/uploads/2019/04/girls-group-optimized.jpg');
+    background-size: cover;
+    background-position: center top;
+    z-index: 0;
+  }
+  .lp-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(255,255,255,1)    0%,
+      rgba(255,255,255,0.96) 20%,
+      rgba(255,255,255,0.68) 44%,
+      rgba(255,255,255,0.06) 70%,
+      rgba(255,255,255,0)   100%
+    );
+    z-index: 1;
+  }
+  .lp-hero__content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 24px 56px;
+    max-width: 860px;
+    width: 100%;
+  }
+  .lp-hero__eyebrow {
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--amber);
+    margin-bottom: 8px;
+  }
+  .lp-hero__title {
+    font-family: 'hero-new', 'canada-type-gibson', sans-serif;
+    font-size: clamp(44px, 7vw, 82px);
+    font-weight: 900;
+    line-height: 1;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: -1.5px;
+    margin-bottom: 4px;
+  }
+  .lp-hero__title span { color: var(--coral); }
+  .lp-hero__subtitle {
+    font-size: clamp(15px, 2.5vw, 20px);
+    font-weight: 700;
+    color: var(--navy);
+    opacity: 0.8;
+    margin-bottom: 12px;
+  }
+  .lp-hero__divider {
+    width: 40px; height: 3px;
+    background: var(--coral);
+    margin: 0 auto 14px;
+    border-radius: 2px;
+  }
+  .lp-hero__mem-title {
+    font-family: 'hero-new', 'canada-type-gibson', sans-serif;
+    font-size: clamp(22px, 3.5vw, 36px);
+    font-weight: 900;
+    color: var(--navy);
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 6px;
+  }
+  .lp-hero__mem-title span { color: var(--coral); }
+  .lp-hero__mem-sub {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 28px;
+    line-height: 1.5;
+  }
+
+  /* CTA CARDS */
+  .cta-block {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cta-card {
+    background: transparent;
+    border-radius: 16px;
+    padding: 20px 22px;
+    text-align: center;
+    min-width: 220px;
+    max-width: 270px;
+    flex: 1;
+  }
+  .cta-card__label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--sand);
+    margin-bottom: 4px;
+  }
+  .cta-card__heading {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 16px;
+    line-height: 1.3;
+  }
+
+  /* PALI BUTTON */
+  .pali-btn-wrapper { display: flex; justify-content: center; width: 100%; }
+  .pali-btn-shadow-wrap { position: relative; display: inline-block; width: 100%; }
+  .pali-cta-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 13px 28px;
+    font-family: 'canada-type-gibson', 'Gill Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px solid #000;
+    -webkit-text-stroke: 1px #000;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.12s ease;
+    box-sizing: border-box;
+    text-transform: uppercase;
+  }
+  .pali-cta-btn:hover  { transform: translate(-2px, -2px); text-decoration: none; }
+  .pali-cta-btn:active { transform: translate(5px, 5px); }
+  .pali-btn-shadow {
+    position: absolute;
+    top: 5px; left: 5px; right: -5px; bottom: -5px;
+    border-radius: 50px;
+    border: 2px solid #000;
+    z-index: 1;
+  }
+  .pali-cta-btn--coral  { background: var(--coral);  color: #fff; }
+  .pali-cta-btn--navy   { background: var(--navy);   color: #fff; }
+  .pali-cta-btn--amber  { background: var(--amber);  color: #fff; }
+
+  /* TRUST BAR */
+  .lp-trust-bar { background: var(--navy); padding: 16px 24px; text-align: center; }
+  .lp-trust-bar p { font-size: 13px; color: #fff; font-weight: 600; opacity: 0.92; margin: 0; }
+  .lp-trust-bar strong { color: var(--amber); }
+
+  /* SESSIONS */
+  .lp-sessions { background: #f9f8f6; padding: 80px 24px; }
+  .lp-sessions__inner { max-width: 860px; margin: 0 auto; }
+  .lp-section-label { font-size: 11px; letter-spacing: 4px; text-transform: uppercase; font-weight: 700; color: var(--coral); margin-bottom: 8px; text-align: center; }
+  .lp-section-title { font-family: 'hero-new', 'canada-type-gibson', sans-serif; font-size: clamp(28px, 4vw, 44px); font-weight: 900; color: var(--navy); text-align: center; text-transform: uppercase; letter-spacing: -0.5px; margin-bottom: 8px; }
+  .lp-section-desc { text-align: center; color: #666; font-size: 15px; line-height: 1.6; max-width: 580px; margin: 0 auto 40px; }
+  .lp-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,63,120,0.09); }
+  .lp-table thead tr { background: var(--navy); }
+  .lp-table thead th { padding: 15px 20px; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; text-align: left; color: #fff; }
+  .lp-table tbody tr { border-bottom: 1px solid #f0ede9; transition: background 0.15s; }
+  .lp-table tbody tr:last-child { border-bottom: none; }
+  .lp-table tbody tr:hover { background: #f0f6ff; }
+  .lp-table td { padding: 14px 20px; font-size: 15px; color: #444; }
+  .lp-table td:first-child { font-weight: 700; color: var(--navy); }
+  .lp-badge { display: inline-block; background: #eef4ff; color: var(--navy); padding: 4px 12px; border-radius: 50px; font-size: 13px; font-weight: 600; }
+
+  /* INFO STRIP */
+  .lp-info { background: #fff; padding: 30px 24px; border-top: 1px solid #eee; text-align: center; }
+  .lp-info p { font-size: 15px; color: #666; line-height: 1.7; }
+  .lp-info a { color: var(--coral); font-weight: 700; text-decoration: none; }
+
+  /* FOOTER */
+  .main-footer { background: var(--navy); }
+  .main-footer__top { padding: 0; }
+  .footer-top-menu { background: rgba(255,255,255,0.06); padding: 20px 24px; }
+  .footer-top-menu .menu { display: flex; justify-content: center; gap: 32px; list-style: none; flex-wrap: wrap; }
+  .footer-top-menu .menu a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 14px; font-weight: 600; }
+  .footer-top-menu .menu a:hover { color: #fff; }
+  .footer-second-block { padding: 40px 24px; }
+  .footer-second-inner { display: flex; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap; }
+  .footer-image-block { display: flex; gap: 20px; align-items: center; }
+  .footer-image-block img { height: 52px; width: auto; filter: brightness(0) invert(1); opacity: 0.85; }
+  .address p { color: rgba(255,255,255,0.75); font-size: 14px; line-height: 1.7; text-align: center; }
+  .address a { color: var(--sky); }
+  .ft-social { list-style: none; display: flex; gap: 14px; }
+  .ft-social a { color: rgba(255,255,255,0.7); font-size: 18px; text-decoration: none; transition: color 0.2s; }
+  .ft-social a:hover { color: #fff; }
+  .footer-third-block { background: rgba(0,0,0,0.2); padding: 24px; }
+  .footer-third-block img { height: 40px; width: auto; filter: brightness(0) invert(1); opacity: 0.7; margin: 0 16px; }
+  .main-footer__bottom { background: rgba(0,0,0,0.3); padding: 16px 24px; text-align: center; }
+  .main-footer__bottom p { color: rgba(255,255,255,0.5); font-size: 13px; }
+  .main-footer__bottom a { color: rgba(255,255,255,0.6); }
+
+  /* MODAL */
+  .lp-modal-overlay {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 9999;
+    display: flex; align-items: center; justify-content: center;
+    padding: 24px;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+  .lp-modal-overlay.active { opacity: 1; pointer-events: all; }
+  .lp-modal {
+    background: #fff; border-radius: 20px;
+    padding: 48px 40px; max-width: 460px; width: 100%;
+    position: relative;
+    transform: translateY(24px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.28);
+  }
+  .lp-modal-overlay.active .lp-modal { transform: translateY(0); }
+  .lp-modal__close { position: absolute; top: 16px; right: 20px; background: none; border: none; font-size: 22px; cursor: pointer; color: #aaa; }
+  .lp-modal__close:hover { color: #333; }
+  .lp-modal__icon { font-size: 36px; margin-bottom: 10px; }
+  .lp-modal__lbl { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; color: var(--coral); margin-bottom: 6px; }
+  .lp-modal__title { font-family: 'hero-new', 'canada-type-gibson', sans-serif; font-size: 24px; font-weight: 900; color: var(--navy); margin-bottom: 6px; line-height: 1.2; text-transform: uppercase; }
+  .lp-modal__sub { font-size: 14px; color: #666; margin-bottom: 26px; line-height: 1.6; }
+  .lp-form-group { margin-bottom: 14px; }
+  .lp-form-group label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--navy); margin-bottom: 5px; }
+  .lp-form-group input { width: 100%; padding: 12px 16px; border: 2px solid #e8e8e8; border-radius: 10px; font-size: 15px; outline: none; transition: border-color 0.2s; font-family: inherit; }
+  .lp-form-group input:focus { border-color: var(--navy); }
+  .lp-modal__privacy { font-size: 11px; color: #bbb; text-align: center; margin-top: 12px; }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .lp-hero__eyebrow   { animation: fadeUp 0.5s ease 0.1s both; }
+  .lp-hero__title     { animation: fadeUp 0.6s ease 0.2s both; }
+  .lp-hero__subtitle  { animation: fadeUp 0.6s ease 0.3s both; }
+  .lp-hero__divider   { animation: fadeUp 0.5s ease 0.35s both; }
+  .lp-hero__mem-title { animation: fadeUp 0.6s ease 0.4s both; }
+  .lp-hero__mem-sub   { animation: fadeUp 0.6s ease 0.45s both; }
+  .cta-block          { animation: fadeUp 0.6s ease 0.55s both; }
+
+  /* RESPONSIVE */
+  @media (max-width: 640px) {
+    .cta-card { min-width: 100%; max-width: 100%; }
+    .lp-hero__content { padding: 0 20px 48px; }
+    .lp-modal { padding: 36px 24px; }
+    .lp-sessions { padding: 60px 20px; }
+    .footer-second-inner { flex-direction: column; gap: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="main-header">
+  <div class="main-header__bottom">
+    <div class="row">
+      <div class="main-header__left">
+        <a href="https://paliadventures.com/" class="main-header__logo">
+          <img src="https://paliadventures.com/wp-content/uploads/2018/11/logo-main.svg" alt="Pali Adventures logo">
+        </a>
+      </div>
+      <nav class="main-header__nav">
+        <ul>
+          <li><a href="https://paliadventures.com/about/">About</a></li>
+          <li><a href="https://paliadventures.com/camp-programs/">Camp Programs</a></li>
+          <li><a href="https://paliadventures.com/enrolled-families/">Enrolled Families</a></li>
+          <li><a href="https://paliadventures.com/mini-camp/">Mini Camp</a></li>
+          <li><a rel="nofollow" href="https://store.paliadventures.com/">Store</a></li>
+        </ul>
+      </nav>
+      <div class="main-header__right">
+        <a href="tel:9098675743" class="phone-head">909-867-5743</a>
+        <a class="c-btn c-btn-secondary" href="https://paliadventures.campintouch.com/ui/forms/application/camper/App" target="_blank"><span>Enroll Now</span></a>
+        <a class="c-btn-primary" href="https://paliadventures.com/next-steps/request-a-brochure/">Request Info</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="lp-hero">
+  <div class="lp-hero__bg"></div>
+  <div class="lp-hero__overlay"></div>
+  <div class="lp-hero__content">
+    <p class="lp-hero__eyebrow">Don't wait — spots fill fast</p>
+    <h1 class="lp-hero__title">Summer Camp<br><span>2026</span></h1>
+    <p class="lp-hero__subtitle">Early Bird Enrollment is Open!</p>
+    <div class="lp-hero__divider"></div>
+    <h2 class="lp-hero__mem-title">Ready to make memories<br>that <span>last?</span></h2>
+    <p class="lp-hero__mem-sub">8 days · 25+ specialties · A summer your kid will never forget.</p>
+    <div class="cta-block">
+      <div class="cta-card">
+        <p class="cta-card__label">Returning Family?</p>
+        <p class="cta-card__heading">Ready to enroll your camper</p>
+        <div class="pali-btn-wrapper">
+          <div class="pali-btn-shadow-wrap">
+            <a href="https://paliadventures.campintouch.com/ui/forms/application/camper/App" target="_blank" class="pali-cta-btn pali-cta-btn--coral">
+              <strong>Enroll Now →</strong>
+            </a>
+            <div class="pali-btn-shadow" style="background:#8a2a15;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="cta-card">
+        <p class="cta-card__label">First Time Here?</p>
+        <p class="cta-card__heading">Get details & availability info</p>
+        <div class="pali-btn-wrapper">
+          <div class="pali-btn-shadow-wrap">
+            <button class="pali-cta-btn pali-cta-btn--amber" onclick="openModal()">
+              <strong>Get More Info →</strong>
+            </button>
+            <div class="pali-btn-shadow" style="background:#a05c06;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="lp-trust-bar">
+  <p>🏕️ ACA-Accredited overnight camp in Running Springs, CA &nbsp;·&nbsp; <strong>Ages 8–16</strong> &nbsp;·&nbsp; 25+ specialties &nbsp;·&nbsp; Sessions June–August 2026</p>
+</div>
+
+<!-- SESSIONS -->
+<section class="lp-sessions">
+  <div class="lp-sessions__inner">
+    <p class="lp-section-label">2026 Schedule</p>
+    <h2 class="lp-section-title">Pick Your Session</h2>
+    <p class="lp-section-desc">Not sure about your summer schedule? No worries — you can change your session and specialty at any time as long as space is available.</p>
+    <table class="lp-table">
+      <thead>
+        <tr><th>Session</th><th>Dates</th><th>Theme</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Session 1</td><td>June 7 – June 14</td><td><span class="lp-badge">Around the World</span></td></tr>
+        <tr><td>Session 2</td><td>June 14 – June 21</td><td><span class="lp-badge">Magic</span></td></tr>
+        <tr><td>Session 3</td><td>June 21 – June 28</td><td><span class="lp-badge">Neon</span></td></tr>
+        <tr><td>Session 4</td><td>June 28 – July 5</td><td><span class="lp-badge">4th of July</span></td></tr>
+        <tr><td>Session 5</td><td>July 5 – July 12</td><td><span class="lp-badge">Halloween</span></td></tr>
+        <tr><td>Session 6</td><td>July 12 – July 19</td><td><span class="lp-badge">Mythology</span></td></tr>
+        <tr><td>Session 7</td><td>July 19 – July 26</td><td><span class="lp-badge">Western</span></td></tr>
+        <tr><td>Session 8</td><td>July 26 – August 2</td><td><span class="lp-badge">Safari</span></td></tr>
+        <tr><td>Session 9</td><td>August 2 – August 9</td><td><span class="lp-badge">Magic 2nd Act</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- INFO STRIP -->
+<div class="lp-info">
+  <p>Questions? Contact one of our Parent Liaisons at <a href="tel:9098675743">909-867-5743</a>, Monday–Friday 8:30AM–5PM.</p>
+</div>
+
+<!-- FOOTER -->
+<footer class="main-footer">
+  <div class="main-footer__top">
+    <div class="footer-top-menu">
+      <div class="container">
+        <ul class="menu">
+          <li><a rel="nofollow" href="https://store.paliadventures.com/">Pali Store</a></li>
+          <li><a href="https://paliadventures.com/work-at-pali/">Work at Pali</a></li>
+          <li><a href="https://paliadventures.com/the-pali-blog/">Blog</a></li>
+          <li><a href="https://paliadventures.com/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-second-block">
+      <div class="container">
+        <div class="footer-second-inner">
+          <div class="footer-image-block">
+            <a href="https://www.waic.org/" target="_blank"><img src="https://paliadventures.com/wp-content/uploads/2019/04/WAIC-logo-2019-210-126.png" alt="WAIC Logo"></a>
+            <a href="https://www.acacamps.org/" target="_blank"><img src="https://paliadventures.com/wp-content/uploads/2018/11/aca-logo.png" alt="ACA logo"></a>
+          </div>
+          <div class="address">
+            <p>Call us Monday – Friday 8:30AM – 5PM,<br>at <a href="tel:9098675743">909.867.5743</a><br>30778 Hwy 18, Running Springs, California</p>
+          </div>
+          <div class="social-media">
+            <ul class="ft-social">
+              <li><a href="https://www.facebook.com/paliadventures" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/PaliAdventures" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/pali_adventures/" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://www.pinterest.com/palisummercamp/" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+              <li><a href="https://www.youtube.com/paliadventures" title="YouTube" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-third-block text-center">
+      <div class="container">
+        <a href="https://www.paliinstitute.com/" target="_blank"><img src="https://paliadventures.com/wp-content/uploads/2019/04/pali-institute.png" alt="Pali Institute"></a>
+        <a href="https://www.paliretreat.com/" target="_blank"><img src="https://paliadventures.com/wp-content/uploads/2019/04/Retreat.png" alt="Pali Retreat"></a>
+      </div>
+    </div>
+  </div>
+  <div class="main-footer__bottom">
+    <div class="container">
+      <p>Copyright &copy; 2025 Pali Adventures. All Rights Reserved. <a href="https://paliadventures.com/privacy-policy/">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="lp-modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
+  <div class="lp-modal" id="modalBox">
+    <button class="lp-modal__close" onclick="closeModal()">&#10005;</button>
+    <div id="formArea">
+      <div class="lp-modal__icon">&#127957;</div>
+      <p class="lp-modal__lbl">New Families</p>
+      <h3 class="lp-modal__title">Let's find your<br>perfect session</h3>
+      <p class="lp-modal__sub">Tell us a bit about your family and we'll send you everything you need to know about Pali Adventures 2026.</p>
+      <div class="lp-form-group">
+        <label>Parent's Name</label>
+        <input type="text" id="parentName" placeholder="Jane Smith">
+      </div>
+      <div class="lp-form-group">
+        <label>Email Address</label>
+        <input type="email" id="emailInput" placeholder="jane@email.com">
+      </div>
+      <div class="lp-form-group">
+        <label>Child's Age</label>
+        <input type="number" id="childAge" placeholder="e.g. 12" min="8" max="16">
+      </div>
+      <div class="pali-btn-wrapper" style="margin-top:10px;">
+        <div class="pali-btn-shadow-wrap">
+          <button class="pali-cta-btn pali-cta-btn--coral" onclick="submitForm()">
+            <strong>Send Me Info &#8594;</strong>
+          </button>
+          <div class="pali-btn-shadow" style="background:#8a2a15;"></div>
+        </div>
+      </div>
+      <p class="lp-modal__privacy">We respect your privacy. No spam, ever.</p>
+    </div>
+    <div id="thankYouMsg" style="display:none;text-align:center;padding:20px 0;">
+      <div style="font-size:48px;margin-bottom:16px;">&#127881;</div>
+      <h3 style="color:var(--navy);font-size:22px;font-weight:900;text-transform:uppercase;margin-bottom:10px;">You're all set!</h3>
+      <p style="color:#666;font-size:15px;line-height:1.6;">We'll be in touch shortly with everything you need to know about Pali Adventures 2026.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openModal() {
+    document.getElementById('modalOverlay').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal() {
+    document.getElementById('modalOverlay').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  function closeModalOutside(e) {
+    if (e.target === document.getElementById('modalOverlay')) closeModal();
+  }
+  function submitForm() {
+    var name  = document.getElementById('parentName').value.trim();
+    var email = document.getElementById('emailInput').value.trim();
+    if (!name || !email) { alert('Please fill in your name and email.'); return; }
+    // TODO: conectar ao HubSpot API
+    document.getElementById('formArea').style.display = 'none';
+    document.getElementById('thankYouMsg').style.display = 'block';
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeModal();
+  });
+</script>
+
+</body>
+</html>
